@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Francisco Chanatasig - Portafolio</title>
+    <meta name="description"
+        content="Portafolio de Juan Francisco Chanatasig, Desarrollador Web Full-Stack y Estudiante de Ingeniería en Software.">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <!-- Notificación de estado del sistema (Heurística 1) -->
+    <div id="toast" class="toast" aria-live="polite">Acción realizada con éxito</div>
+
+    <!-- Navegación consistente y reconocible (Heurística 4 y 6) -->
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <span class="nav-logo">JFC</span>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#educacion">Educación</a></li>
+            </ul>
+            <!-- Control del usuario (Heurística 3) -->
+            <button id="theme-toggle" class="btn-icon" title="Alternar modo claro/oscuro (Heurística 10)">
+                <svg id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Información de contacto altamente visible (Eficiencia - Heurística 7) -->
+    <header id="sobre-mi" class="hero section-padding">
+        <div class="hero-content fade-in">
+            <!-- Espacio para foto circular -->
+            <div class="profile-container">
+                <!--[cite: 2] -->
+                <img src="/resources/img/WhatsApp Image 2026-06-20 at 3.01.25 PM.jpeg"
+                    alt="Foto de perfil de Juan Francisco" class="profile-img"
+                    onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIj48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iI2QxZDVkYiIvPjwvc3ZnPg=='"
+                    title="Juan Chanatasig (Recuperación de errores H9)">
+            </div>
+
+            <div class="hero-text">
+                <!--[cite: 1] -->
+                <h1 class="hero-title">Juan Francisco Chanatasig Garzón</h1>
+                <h2 class="hero-subtitle">Desarrollador Web Full-Stack | Ingeniería en Software</h2>
+
+                <div class="contact-info">
+                    <span class="contact-item" title="Ubicación">📍 Quito, Ecuador</span>
+                    <span class="contact-item" title="Teléfono">📱 +593 96362179</span>
+                    <a href="mailto:jfchanatasig1405@gmail.com" class="contact-link" title="Enviar correo">✉️
+                        jfchanatasig1405@gmail.com</a>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/juan-francisco-chanatasig-garzón-63aa9b37b" target="_blank"
+                            rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+                        <a href="https://github.com/JFranGar" target="_blank" rel="noopener noreferrer"
+                            class="contact-link">GitHub</a>
+                    </div>
+                </div>
+
+                <p class="hero-description">
+                    Estudiante de sexto nivel en la Escuela Politécnica Nacional. Orientado al desarrollo web,
+                    integración de agentes autónomos de IA en flujos de trabajo (Vibe Coding) y computación gráfica.
+                    Busco aportar a sistemas innovadores con buenas prácticas de desarrollo.
+                </p>
+                <!-- Contenedor del Iframe Animado (Añadir debajo del texto descriptivo) -->
+                <div class="animation-wrapper fade-in">
+                    <!-- El iframe previene errores al separar el código del motor gráfico de tu web principal (Heurística 5) -->
+                    <iframe src="animacion.html"
+                        title="Animación interactiva mostrando mi proceso de desarrollo (Heurística 10)"
+                        class="pixel-frame" frameborder="0"></iframe>
+                </div>
+                <button id="download-cv" class="btn btn-primary" title="Descargar currículum en formato PDF">Descargar
+                    CV</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Habilidades: Diseño estético y minimalista (Heurística 8) -->
+        <section id="habilidades" class="section section-alt section-padding">
+            <div class="container fade-in">
+                <h2 class="section-heading">Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript (ES6+)</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend & Lenguajes</h3>
+                        <div class="tags">
+                            <span class="tag">Java (Spring Boot)</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Kotlin (Android)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Bases de Datos</h3>
+                        <div class="tags">
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Oracle</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Herramientas & DevOps</h3>
+                        <div class="tags">
+                            <span class="tag">Git / GitHub</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Railway</span>
+                            <span class="tag">n8n (Automatización)</span>
+                            <span class="tag">Unity (Gráficos 3D)</span>
+                            <span class="tag">Scrum (Ágil)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="section section-padding">
+            <div class="container fade-in">
+                <h2 class="section-heading">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    <!--[cite: 1] -->
+                    <article class="card">
+                        <h3 class="card-title">Catálogo de Libros, Mangas y Cómics</h3>
+                        <p class="card-text">Aplicación web full-stack para gestión de catálogos. API REST conectada a
+                            base de datos relacional y flujo de trabajo colaborativo.</p>
+                        <div class="tags card-tags">
+                            <span class="tag tag-sm">Java Spring Boot</span>
+                            <span class="tag tag-sm">HTML/CSS/JS</span>
+                            <span class="tag tag-sm">Git</span>
+                        </div>
+                    </article>
+                    <!--[cite: 1] -->
+                    <article class="card">
+                        <h3 class="card-title">CarShowroom Industria 4.0</h3>
+                        <p class="card-text">Aplicación de computación gráfica orientada a la visualización realista de
+                            vehículos en 3D manejando renderizado e iluminación de alta fidelidad.</p>
+                        <div class="tags card-tags">
+                            <span class="tag tag-sm">C++</span>
+                            <span class="tag tag-sm">OpenGL</span>
+                        </div>
+                    </article>
+                    <!--[cite: 1] -->
+                    <article class="card">
+                        <h3 class="card-title">Inclusión Digital</h3>
+                        <p class="card-text">Iniciativa de responsabilidad social enfocada en capacitar a adultos
+                            mayores en el uso básico de la computadora, adaptando la pedagogía.</p>
+                        <div class="tags card-tags">
+                            <span class="tag tag-sm">Enseñanza</span>
+                            <span class="tag tag-sm">Comunicación</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educación -->
+        <section id="educacion" class="section section-alt section-padding">
+            <div class="container fade-in">
+                <h2 class="section-heading">Educación</h2>
+                <div class="timeline">
+                    <!--[cite: 1] -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 - Actualidad</div>
+                        <h3 class="timeline-title">Ingeniería en Software</h3>
+                        <p class="timeline-org">Escuela Politécnica Nacional (EPN), Quito</p>
+                    </div>
+                    <!--[cite: 1] -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2016 - 2021</div>
+                        <h3 class="timeline-title">Bachiller en Ciencias</h3>
+                        <p class="timeline-org">Unidad Educativa San José La Salle, Latacunga</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Juan Francisco Chanatasig. Construido con metodologías de código limpio.</p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
